@@ -1,0 +1,161 @@
+# EdenKey
+
+EdenKey is a sanctum engine — a system designed to create, protect, and restore safe digital spaces.  
+It blends clear architecture, strong security, and a restoration‑first philosophy to support people, not just processes.
+
+## Overview
+
+EdenKey provides a modular foundation for building systems that prioritize stability, clarity, and care.  
+Its core principle is simple: **protect the sanctum first, then everything else**.  
+Every module, boundary, and protocol is organized around that priority.
+
+## Features
+
+- **Sanctum‑centered architecture** with explicit boundaries and guardianship  
+- **Security‑first design** using cryptographic utilities and layered authentication  
+- **Modular domains** for users, sessions, guardians, and sanctums  
+- **Restoration‑oriented workflows** with audit trails and recovery paths  
+- **Clear documentation** covering architecture, protocols, and philosophy  
+
+## Repository Structure
+
+edenkey/ ├── README.md ├── LICENSE ├── .gitignore ├── pyproject.toml │ ├── src/ │   ├── edenkey/ │   │   ├── init.py │   │   ├── main.py │   │   ├── router.py │   │   ├── core/ │   │   │   ├── config.py │   │   │   ├── security.py │   │   │   ├── sanctum.py │   │   │   └── exceptions.py │   │   ├── domains/ │   │   │   ├── users.py │   │   │   ├── sessions.py │   │   │   └── guardians.py │   │   ├── services/ │   │   │   ├── auth_service.py │   │   │   ├── sanctum_service.py │   │   │   └── audit_service.py │   │   ├── models/ │   │   │   ├── user.py │   │   │   ├── session.py │   │   │   └── audit_log.py │   │   └── utils/ │   │       ├── crypto.py │   │       ├── hashing.py │   │       └── validators.py │   └── cli/ │       └── edenkey_cli.py │ ├── docs/ │   ├── index.md │   ├── architecture.md │   ├── api-reference.md │   ├── sanctum-protocols.md │   └── restoration-philosophy.md │ ├── tests/ │   ├── test_auth.py │   ├── test_sanctum.py │   └── test_users.py │ └── scripts/ ├── scaffold_dev_env.sh ├── run_tests.sh └── deploy_stub.sh
+
+
+## Installation
+
+```bash
+git clone https://github.com/<your-org>/edenkey.git
+cd edenkey
+python -m venv .venv
+source .venv/bin/activate
+pip install -e .
+
+
+Usage
+
+Run the service:
+
+python -m edenkey.main
+
+
+Use the CLI:
+
+python -m src.cli.edenkey_cli --help
+
+
+Documentation
+
+All documentation lives in /docs:
+
+• Architecture — system structure and design principles
+• Sanctum Protocols — rules for creation, admission, operation, and restoration
+• Restoration Philosophy — the human‑centered foundation of EdenKey
+• API Reference — endpoints and integration details
+
+
+Contributing
+
+EdenKey is a stewardship‑driven project. Contributions should:
+
+• Preserve the sanctum
+• Maintain clarity and explicit boundaries
+• Support restoration and repair
+• Include tests and documentation updates
+
+
+License
+
+This project is licensed under the terms described in the LICENSE file.
+
+
+---
+
+# 📄 **LICENSE (MIT License — with your full name)**
+
+```text
+MIT License
+
+Copyright (c) 2025 Jacob F. Garcia
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+---# Security Policy
+
+EdenKey is built on the principle that systems can be sanctums — places of safety, clarity, and restoration.  
+Security is not an afterthought; it is the foundation.
+
+## Supported Versions
+
+Security updates are provided for the latest major release of EdenKey.  
+Older versions may receive critical patches at the maintainers’ discretion.
+
+## Reporting a Vulnerability
+
+If you discover a vulnerability, we ask that you:
+
+1. **Report it privately**  
+   Email: security@edenkey.app (or your preferred address)
+
+2. **Provide as much detail as possible**  
+   - Steps to reproduce  
+   - Impact assessment  
+   - Any logs or traces (sanitized)
+
+3. **Allow time for responsible remediation**  
+   We will acknowledge your report within **72 hours** and provide a remediation timeline.
+
+## Responsible Disclosure
+
+We ask that you:
+
+- Do **not** publicly disclose vulnerabilities before a fix is released  
+- Do **not** test against production systems without explicit permission  
+- Do **not** attempt to access data you do not own  
+
+## Security Principles
+
+EdenKey follows these core principles:
+
+- **Least privilege** — every component has only the access it needs  
+- **Defense in depth** — multiple layers of protection  
+- **Auditability** — all sensitive actions are logged  
+- **Restoration-first** — breaches trigger recovery, not silence  
+- **Explicit boundaries** — sanctums define what is allowed and what is not  
+
+## Scope
+
+This policy applies to:
+
+- EdenKey source code  
+- EdenKey services and APIs  
+- Sanctum protocols and boundary enforcement
+# Code of Conduct
+
+EdenKey is a stewardship-driven project.  
+We build sanctums — digital spaces that protect, restore, and support people.  
+Our community must reflect those values.
+
+## Our Pledge
+
+We pledge to make participation in EdenKey a safe, welcoming, and restorative experience for everyone, regardless of:
+
+- Background  
+- Identity
